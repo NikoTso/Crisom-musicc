@@ -9,7 +9,7 @@ app.use(express.json());
 app.use('/audio', express.static(path.join(__dirname, '../site/audio')));
 app.use('/imagens', express.static(path.join(__dirname, '../site/imagens')));
 
-const db = new Database(path.join(__dirname, 'data', 'crimsonecho.db'));
+const db = new Database(path.join(__dirname, 'crimsonecho.db'));
 
 db.exec(`
 CREATE TABLE IF NOT EXISTS musicas (
