@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    container_name: crimson-echo-site
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  api:
+    build: ./api
+    container_name: crimson-echo-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - api_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  api_data:

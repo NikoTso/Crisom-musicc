@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crimson Echo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>CRIMSON ECHO</h1>
+      <p class="tagline">Trilha sonora épica para batalhas inesquecíveis</p>
+      <a href="#musicas" class="cta">Ouvir Agora</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#musicas">Músicas</a>
+    <a href="#shows">Shows</a>
+    <a href="#comentarios">Comentários</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre a Banda</h2>
+    <div class="about-grid">
+      <img src="imagens/download (3).jpg" alt="Banda Crimson Echo" class="band-img">
+      <p>Crimson Echo é uma banda de metal sinfônico formada em 2024, conhecida por suas trilhas inspiradas em RPGs e jogos de fantasia medieval. Unindo guitarras pesadas, orquestrações épicas e vocais poderosos, a banda transporta o público para batalhas lendárias.</p>
+    </div>
+  </section>
+
+  <section id="musicas">
+    <h2>Últimas Faixas</h2>
+    <div class="card-grid" id="musicas-grid">
+      <p class="loading">Carregando músicas...</p>
+    </div>
+  </section>
+
+  <section id="shows">
+    <h2>Próximos Shows</h2>
+    <div class="card-grid" id="shows-grid">
+      <p class="loading">Carregando shows...</p>
+    </div>
+  </section>
+
+  <section id="comentarios">
+    <h2>Comentários dos Fãs</h2>
+    <form id="form-comentario" class="form-box">
+      <input type="text" id="com-nome" placeholder="Seu nome" required>
+      <textarea id="com-mensagem" placeholder="Deixe seu recado pra banda..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="comentario-status" class="status-msg"></p>
+    <div id="lista-comentarios" class="comment-list"></div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato" class="form-box">
+      <input type="text" id="contato-nome" placeholder="Seu nome" required>
+      <input type="email" id="contato-email" placeholder="Seu e-mail" required>
+      <textarea id="contato-mensagem" placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p id="contato-status" class="status-msg"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Crimson Echo. Demo Docker — Projeto DevOps.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
