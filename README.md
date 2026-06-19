@@ -93,6 +93,7 @@ Esse projeto não nasceu funcionando de primeira — e os problemas que aparecer
 - **Case-sensitivity Windows vs Linux**: arquivos como `Server.js`, `Script.js` e `Nginx.conf` funcionavam normalmente no Windows (que ignora maiúscula/minúscula), mas quebravam dentro do container Linux, que diferencia `server.js` de `Server.js`. Isso gerou erros silenciosos como `Cannot find module` e o Nginx servindo `index.html` no lugar do `script.js` esperado.
 - **Cache de build do Docker** mascarando correções — depois de renomear arquivos, builds incrementais continuavam usando layers antigas, exigindo `--no-cache` e remoção manual das imagens para forçar uma reconstrução limpa.
 - **Encoding de nomes de arquivo** (acentos corrompidos em `.mp3` após extração de zip), causando 404 nos players de áudio mesmo com a API funcionando perfeitamente.
+- - **Subir o site na Web** Erros no BackEnd no Render foram enfrentandos por causa de SO do Windows para o Linux.
 
 Resolver isso na prática trouxe entendimento real de como ambientes de containers isolam (e expõem) diferenças entre sistemas operacionais — algo que não aparece estudando só a teoria do Docker.
 
@@ -118,10 +119,3 @@ docker-demo/
 ```
 
 ---
-
-## 📌 Próximos passos
-
-- [ ] Configurar CORS com lista de origens permitidas (atualmente fixado para um domínio único)
-- [ ] Adicionar `.dockerignore` na pasta `api/` para builds mais rápidos
-- [ ] Deploy de demo ao vivo (frontend na Vercel + API em Render/Railway)
-- [ ] Testes automatizados das rotas da API
