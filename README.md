@@ -2,14 +2,15 @@
 
 Site fictício de uma banda de metal, construído como exercício prático de **containerização e orquestração multi-serviço** com Docker. O projeto simula uma aplicação web real: frontend estático servido por Nginx, API REST em Node.js, e persistência em SQLite — tudo rodando em containers isolados que se comunicam via rede interna do Docker Compose.
 
+> Site Online https://crisom-musicc.vercel.app
+
 > Projeto acadêmico (disciplina de DevOps) levado além do escopo mínimo: virou um case real de troubleshooting de ambiente, debugging cross-platform e arquitetura de containers.
 
 ---
 
 ## 🖼️ Preview
 
-*<img width="1568" height="744" alt="image" src="https://github.com/user-attachments/assets/4fdc3ea7-cadd-4cc0-bafe-13b25b6df777" />
-*
+<img width="1918" height="908" alt="image" src="https://github.com/user-attachments/assets/da53d9f4-ce96-4476-9d65-bc7f1dbc4a89" />
 
 ---
 
