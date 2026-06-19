@@ -4,7 +4,7 @@ const Database = require('better-sqlite3');
 const path = require('path');
 
 const app = express();
-app.use(cors({origin: 'https://crisom-musicc.vercel.app/'}));
+app.use(cors({origin: 'https://crisom-musicc.vercel.app'}));
 app.use(express.json());
 app.use('/audio', express.static(path.join(__dirname, '../site/audio')));
 app.use('/imagens', express.static(path.join(__dirname, '../site/imagens')));
