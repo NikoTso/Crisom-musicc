@@ -1,4 +1,4 @@
-const API_URL = 'https://crisom-musicc.onrender.com';
+const API_URL = 'https://crisom-musicc.onrender.com/api';
  
 async function carregarMusicas() {
   const grid = document.getElementById('musicas-grid');
