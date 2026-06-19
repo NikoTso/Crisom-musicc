@@ -1,3 +1,5 @@
+##  Trabalho docker
+
 <img width="1568" height="744" alt="image" src="https://github.com/user-attachments/assets/a0f08bb7-25fc-48f9-8eee-15a47cd4021d" /># 🎸 Crimson Echo — Site de Banda com Stack Dockerizada
 
 Site fictício de uma banda de metal, construído como exercício prático de **containerização e orquestração multi-serviço** com Docker. O projeto simula uma aplicação web real: frontend estático servido por Nginx, API REST em Node.js, e persistência em SQLite — tudo rodando em containers isolados que se comunicam via rede interna do Docker Compose.
